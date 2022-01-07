@@ -23,7 +23,7 @@ import "regenerator-runtime/runtime";
 ## development
 
 ```bash
-ndenv install 12.18.0
+ndenv install 16.13.1
 ndenv rehash
 ```
 
@@ -65,7 +65,7 @@ npm run test
 ## format
 
 ```bash
-npm run prettier:fix
+npm run prettier
 ```
 
 `prettier --write .` が実行されます。
