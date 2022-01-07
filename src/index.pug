@@ -5,12 +5,16 @@ html(lang="ja")
     title Parcel Web Dev Boilerplate
     meta(content="width=device-width", name="viewport")
     link(rel="stylesheet", href="style/main.scss")
-    script(src="script/main.ts")
+    script(src="script/main.ts", type="module")
 
   body
-    header.Header(role="banner")
+    header.Header
       h1 Parcel Web Dev Boilerplate
 
-    main.Main(role="main")
+    main.Main
+      .DummyBox(data-inview)
+        p ダミーテキスト
+      .DummyBox(data-inview)
+        p ダミーテキスト
 
-    footer.Footer(role="contentinfo")
+    footer.Footer
