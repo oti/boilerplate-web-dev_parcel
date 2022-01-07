@@ -2,39 +2,34 @@
   "private": true,
   "name": "web-dev-boilerplate_parcel",
   "version": "1.3.0",
-  "description": "web development env boilerplate with parcel-bundler",
+  "description": "web development env boilerplate with parcel",
   "license": "MIT",
   "scripts": {
-    "start": "parcel src/index.pug --open --out-dir .tmp",
-    "build": "parcel build src/index.pug --no-source-maps --public-url ./",
-    "prettier:fix": "prettier --write .",
-    "lint:html": "markuplint dist/*.html --ruleset ./markuplintrc",
-    "lint:css": "stylelint dist/*.css",
-    "validate:html": "html-validator --file=dist/index.html --verbose",
-    "test": "npm run lint:css & npm run lint:html & npm run validate:html"
+    "build": "parcel build src/index.pug --no-optimize --no-source-maps --public-url ./",
+    "lint-css": "stylelint dist/*.css",
+    "lint-html": "markuplint dist/*.html --ruleset ./markuplintrc",
+    "prettier": "prettier --write .",
+    "start": "parcel src/index.pug --open",
+    "test": "npm run lint-css & npm run lint-html & npm run validate-html",
+    "validate-html": "html-validator --file=dist/index.html --verbose"
   },
   "dependencies": {
-    "babel-preset-env": "^1.7.0",
-    "core-js": "^3.6.5"
+    "core-js": "^3.20.2"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^1.5.0",
-    "autoprefixer": "^9.7.6",
-    "html-validator-cli": "^7.0.0",
-    "husky": "^4.2.5",
-    "markuplint": "^1.0.0-alpha.38",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "pug": "^2.0.4",
-    "sass": "^1.26.3",
-    "stylelint": "^13.3.2",
-    "stylelint-config-recommended": "^3.0.0",
-    "typescript": "^3.8.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "@parcel/transformer-pug": "^2.1.1",
+    "@parcel/transformer-sass": "^2.1.1",
+    "@prettier/plugin-pug": "^1.19.1",
+    "autoprefixer": "^10.4.1",
+    "babel-preset-env": "^1.7.0",
+    "html-validator-cli": "^7.0.1",
+    "markuplint": "^1.11.4",
+    "parcel": "^2.1.1",
+    "prettier": "^2.5.1",
+    "pug": "^3.0.2",
+    "sass": "^1.46.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "typescript": "^4.5.4"
   }
 }
