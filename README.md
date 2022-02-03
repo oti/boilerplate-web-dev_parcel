@@ -5,7 +5,7 @@
 dependencies の過不足は適宜処理してください。
 
 - HTML: Pug
-- CSS: Sass, Autoprefixer
+- CSS: node-sass, Autoprefixer
 - JS: TypeScript + Babel
 
 Parcel がポリフィル指定をよしなにしてくれているので .babelrc ファイルは不要です。
@@ -23,7 +23,7 @@ import "regenerator-runtime/runtime";
 ## development
 
 ```bash
-ndenv install 16.13.1
+ndenv install 16.13.2
 ndenv rehash
 ```
 
@@ -34,7 +34,7 @@ npm start
 
 `localhost:1234` が起動します。
 
-複数の HTML を扱う場合は
+複数のエントリーポイントを扱う場合は
 
 ```
 parcel src/*.pug
