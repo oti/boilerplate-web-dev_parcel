@@ -11,25 +11,27 @@
     "prettier": "prettier --write .",
     "start": "parcel src/index.pug --open",
     "test": "npm run lint-css & npm run lint-html & npm run validate-html",
-    "validate-html": "html-validator --file=dist/index.html --verbose"
+    "validate-html": "html-validator --file=dist/index.html --verbose",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "core-js": "^3.20.2"
+    "core-js": "^3.21.0"
   },
   "devDependencies": {
-    "@parcel/transformer-pug": "^2.1.1",
-    "@parcel/transformer-sass": "^2.1.1",
-    "@prettier/plugin-pug": "^1.19.1",
-    "autoprefixer": "^10.4.1",
+    "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "@prettier/plugin-pug": "^1.19.2",
+    "autoprefixer": "^10.4.2",
     "babel-preset-env": "^1.7.0",
     "html-validator-cli": "^7.0.1",
+    "husky": "^7.0.4",
     "markuplint": "^1.11.4",
-    "parcel": "^2.1.1",
+    "parcel": "^2.2.1",
     "prettier": "^2.5.1",
     "pug": "^3.0.2",
-    "sass": "^1.46.0",
-    "stylelint": "^14.2.0",
+    "sass": "^1.49.7",
+    "stylelint": "^14.3.0",
     "stylelint-config-recommended": "^6.0.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   }
 }
