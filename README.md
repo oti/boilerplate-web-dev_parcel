@@ -10,7 +10,13 @@ dependencies の過不足は適宜処理してください。
 
 Parcel がポリフィル指定をよしなにしてくれているので .babelrc ファイルは不要です。
 
-IE11 への対応は、JS のエントリーポイントに
+IE11 への対応は
+
+```
+npm i -d core-js
+```
+
+をし、JS のエントリーポイントに
 
 ```
 // for IE11
@@ -18,7 +24,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 ```
 
-を追加しています。
+を追加してください。
 
 ## development
 
