@@ -14,9 +14,6 @@
     "validate-html": "html-validator --file=dist/index.html --verbose",
     "prepare": "husky install"
   },
-  "dependencies": {
-    "core-js": "^3.21.0"
-  },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.2.1",
     "@parcel/transformer-sass": "^2.2.1",
