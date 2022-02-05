@@ -1,7 +1,22 @@
-$color: (
+$colors: (
   base: #30404f,
   main: #336699,
   unti: #993366,
 );
 
-$ff-ja: "Noto Sans JP", sans-serif;
+$ff_ja: "Noto Sans JP", sans-serif;
+
+$breakpoints: (
+  sm: (
+    min-width: 640px,
+  ),
+  md: (
+    min-width: 768px,
+  ),
+  lg: (
+    min-width: 1024px,
+  ),
+  xl: (
+    min-width: 1280px,
+  ),
+) !default;

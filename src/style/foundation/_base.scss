@@ -5,8 +5,9 @@
 }
 
 body {
-  font-family: $ff-ja;
+  font-family: $ff_ja;
   color: c(base);
+  hanging-punctuation: allow-end;
 }
 
 main {
