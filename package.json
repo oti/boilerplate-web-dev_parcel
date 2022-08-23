@@ -9,7 +9,7 @@
     "lint-css": "stylelint dist/*.css",
     "lint-html": "markuplint dist/*.html --ruleset ./markuplintrc",
     "prettier": "prettier --write .",
-    "start": "parcel src/index.pug --open",
+    "start": "parcel src/**/*.pug --open",
     "test": "npm run lint-css & npm run lint-html & npm run validate-html",
     "validate-html": "html-validator --file=dist/index.html --verbose",
     "prepare": "husky install"
