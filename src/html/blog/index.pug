@@ -1,0 +1,20 @@
+-
+  const relativeDirToRoot = '../'
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title Blog | Parcel Web Dev Boilerplate
+    meta(content="width=device-width", name="viewport")
+    link(rel="stylesheet", href="../../style/main.scss")
+    script(src="../../script/main.ts", type="module")
+
+  body
+    header.Header
+      h1 Blog | Parcel Web Dev Boilerplate
+      include ../partial/nav
+
+    main.Main
+      p ここはそう…blogインデックスページ！
+
+    footer.Footer
