@@ -10,28 +10,11 @@ dependencies の過不足は適宜処理してください。
 
 Parcel がポリフィル指定をよしなにしてくれているので .babelrc ファイルは不要です。
 
-IE11 への対応は
-
-```
-npm i -d core-js
-```
-
-をし、JS のエントリーポイントに
-
-```
-// for IE11
-import "core-js/stable";
-import "regenerator-runtime/runtime";
-```
-
 を追加してください。
 
 ## development
 
-```bash
-ndenv install 16.13.2
-ndenv rehash
-```
+Node.js v16.16.0 が必要です。
 
 ```bash
 npm ci
@@ -40,13 +23,11 @@ npm start
 
 `localhost:1234` が起動します。
 
-複数のエントリーポイントを扱う場合は
+複数のエントリーポイントを扱う場合は下記のように glob を利用してください。
 
 ```
 parcel src/*.pug
 ```
-
-としてください。
 
 ## build
 
@@ -70,10 +51,12 @@ npm run test
 
 ## format
 
+基本的に触ったファイルなら pre-commit 時に整形されます。
+
+**全てのファイルを強制的に整形する場合**は下記のコマンドを実行してください。
+
 ```bash
 npm run prettier
 ```
 
-`prettier --write .` が実行されます。
-
-設定ファイルはありません。Prettier のデフォルトに従います。
+整形ルールの設定ファイルはありません。Prettier のデフォルトに従います。
