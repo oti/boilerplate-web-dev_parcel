@@ -15,21 +15,21 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "@parcel/transformer-pug": "^2.2.1",
-    "@parcel/transformer-sass": "^2.2.1",
-    "@prettier/plugin-pug": "^1.19.2",
-    "autoprefixer": "^10.4.2",
+    "@babel/preset-env": "^7.18.10",
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@prettier/plugin-pug": "^2.2.0",
+    "autoprefixer": "^10.4.8",
     "html-validator-cli": "^7.0.1",
-    "husky": "^7.0.4",
-    "markuplint": "^1.11.4",
-    "parcel": "^2.2.1",
-    "prettier": "^2.5.1",
+    "husky": "^8.0.1",
+    "markuplint": "^2.10.1",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
     "pug": "^3.0.2",
-    "sass": "^1.49.7",
-    "stylelint": "^14.3.0",
-    "stylelint-config-recommended": "^6.0.0",
-    "typescript": "^4.5.5"
+    "sass": "^1.54.5",
+    "stylelint": "^14.11.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "typescript": "^4.7.4"
   }
 }
