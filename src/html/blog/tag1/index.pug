@@ -1,0 +1,20 @@
+-
+  const depth = 2
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title Tag1 - Blog | Parcel Web Dev Boilerplate
+    meta(content="width=device-width", name="viewport")
+    link(href="../../../style/main.scss", rel="stylesheet")
+    script(src="../../../script/main.ts", type="module")
+
+  body
+    header.Header
+      h1 Tag1 - Blog | Parcel Web Dev Boilerplate
+      include ../../partial/nav
+
+    main.Main
+      p ここはそう…blogのTag1インデックスページ！
+
+    footer.Footer
