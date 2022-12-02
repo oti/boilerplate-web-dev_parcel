@@ -5,13 +5,12 @@
   "description": "web development env boilerplate with parcel",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.pug --no-optimize --no-source-maps --public-url ./",
-    "lint-css": "stylelint dist/*.css",
-    "lint-html": "markuplint dist/*.html --ruleset ./markuplintrc",
+    "build": "parcel build src/**/*.pug --no-optimize --no-source-maps --public-url ./",
+    "lint-css": "stylelint dist/**/*.css",
+    "lint-html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "prettier": "prettier --write .",
     "start": "parcel src/**/*.pug --open",
-    "test": "npm run lint-css & npm run lint-html & npm run validate-html",
-    "validate-html": "html-validator --file=dist/index.html --verbose",
+    "test": "npm run lint-css & npm run lint-html",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -20,7 +19,6 @@
     "@parcel/transformer-sass": "^2.8.0",
     "@prettier/plugin-pug": "^2.3.0",
     "autoprefixer": "^10.4.13",
-    "html-validator-cli": "^7.0.1",
     "husky": "^8.0.2",
     "markuplint": "^2.11.4",
     "parcel": "^2.8.0",
