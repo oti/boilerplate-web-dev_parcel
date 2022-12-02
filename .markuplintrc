@@ -1,9 +1,9 @@
 {
   "rules": {
     "attr-duplication": true,
-    "attr-equal-space-after": true,
-    "attr-equal-space-before": true,
-    "attr-spacing": true,
+    "attr-equal-space-after": "never",
+    "attr-equal-space-before": "never",
+    "attr-spacing": "either",
     "attr-value-quotes": true,
     "character-reference": true,
     "deprecated-attr": true,
