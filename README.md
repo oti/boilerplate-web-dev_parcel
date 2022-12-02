@@ -23,12 +23,6 @@ npm start
 
 `localhost:1234` が起動します。
 
-複数のエントリーポイントを扱う場合は下記のように glob を利用してください。
-
-```
-parcel src/*.pug
-```
-
 ## build
 
 ```bash
@@ -45,7 +39,6 @@ npm run test
 
 - markuplint
 - stylelint
-- html-validator
 
 が実行されます。
 
