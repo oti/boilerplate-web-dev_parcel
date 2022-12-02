@@ -10,7 +10,7 @@
     "lint-html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "prettier": "prettier --write .",
     "start": "parcel src/**/*.pug --open",
-    "test": "npm run lint-css & npm run lint-html",
+    "test": "npm run lint-css && npm run lint-html",
     "prepare": "husky install"
   },
   "devDependencies": {
