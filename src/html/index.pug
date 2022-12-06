@@ -1,17 +1,18 @@
 -
   const depth = 0
+  const title = `${site}`
 doctype html
 html(lang="ja")
   head
     meta(charset="UTF-8")
-    title Parcel Web Dev Boilerplate
+    title= title
     meta(content="width=device-width", name="viewport")
     link(href="../style/main.scss", rel="stylesheet")
     script(src="../script/main.ts", type="module")
 
   body
     header.Header
-      h1 Parcel Web Dev Boilerplate
+      h1= title
       include partial/nav
 
     main.Main
