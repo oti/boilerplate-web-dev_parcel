@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/**/*.pug --no-optimize --no-source-maps --public-url ./",
-    "lint-css": "stylelint dist/**/*.css",
-    "lint-html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
+    "markuplint": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "pretty-quick": "pretty-quick",
     "start": "parcel src/**/*.pug --open --no-cache",
-    "test": "npm run lint-css && npm run lint-html",
+    "stylelint": "stylelint dist/**/*.css",
+    "test": "npm run stylelint && npm run markuplint",
     "prepare": "husky install"
   },
   "devDependencies": {
