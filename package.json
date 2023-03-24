@@ -5,10 +5,10 @@
   "description": "web development env boilerplate with parcel",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/**/*.pug --no-optimize --no-source-maps --public-url ./",
+    "build": "parcel build src/html/index.pug --no-optimize --no-source-maps --public-url ./",
     "markuplint": "markuplint dist/**/*.html --ruleset ./markuplintrc",
     "pretty-quick": "pretty-quick",
-    "start": "parcel src/**/*.pug --open --no-cache",
+    "start": "parcel src/html/index.pug --open --no-cache",
     "stylelint": "stylelint dist/**/*.css",
     "test": "npm run stylelint && npm run markuplint",
     "prepare": "husky install"
