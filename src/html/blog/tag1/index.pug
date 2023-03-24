@@ -1,22 +1,13 @@
--
-  const depth = 2
-  const title = `Tag1 - Blog | ${site}`
-doctype html
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    title= title
-    meta(content="width=device-width", name="viewport")
-    link(href="../../../style/main.scss", rel="stylesheet")
-    script(src="../../../script/main.ts", type="module")
+extends ../../_layout
 
-  body
-    header.Header
-      h1= title
-      include ../../partial/nav
+block global
+  -
+    const _depth = 0
+    const _title = `Tag1 - Blog | ${_siteName}`
+    const _asset = "../../../"
+    const _html = "../../"
+    const _parmalink = `${_siteHost}/blog/tag1/`
 
-    main.Main
-      p ここはそう…blogのTag1インデックスページ！
-
-    footer.Footer
-      p Under the CC BY-NC 4.0
+block contents
+  main.Main
+    p ここはそう…blogのTag1インデックスページ！
