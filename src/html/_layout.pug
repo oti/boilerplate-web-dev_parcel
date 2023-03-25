@@ -1,5 +1,7 @@
 block global
 
+include _resolver
+
 doctype html
 html(lang="ja")
   head
@@ -11,16 +13,16 @@ html(lang="ja")
     meta(property="og:site_name", content=_siteName)
     meta(property="og:description", content=_siteDesc)
     meta(property="og:title", content=_siteName)
-    meta(property="og:image", content=`${_asset}image/og-image.png`)
     meta(property="og:url", content=_parmalink)
+    meta(property="og:image", content=`${_resolver(_depth, false)}image/og-image.png`)
     meta(property="og:type", content="website")
     meta(property="og:local", content="ja")
-    //- link(rel="shortcut icon", href=`${_asset}image//favicon.ico`)
-    //- link(rel="apple-touch-icon", href=`${_asset}image//apple-touch-icon.png`)
-    link(rel="image_src", href=`${_asset}image//og-image.png`)
     link(rel="canonical", href=_parmalink)
-    link(href=`${_asset}style/main.scss`, rel="stylesheet")
-    script(src=`${_asset}script/main.ts`, type="module")
+    //- link(rel="shortcut icon", href=`${_resolver(_depth, false)}image//favicon.ico`)
+    //- link(rel="apple-touch-icon", href=`${_resolver(_depth, false)}image//apple-touch-icon.png`)
+    link(rel="image_src", href=`${_resolver(_depth, false)}image//og-image.png`)
+    link(href=`${_resolver(_depth, false)}style/main.scss`, rel="stylesheet")
+    script(src=`${_resolver(_depth, false)}script/main.ts`, type="module")
 
   body
     header.Header
