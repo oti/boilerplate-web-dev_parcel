@@ -31,5 +31,25 @@
     "required-h1": true,
     "use-list": [],
     "wai-aria": true
-  }
+  },
+  "nodeRules": [
+    {
+      "selector": "meta[property]",
+      "rules": {
+        "invalid-attr": {
+          "options": {
+            "attrs": {
+              "property": {
+                "pattern": "/^og:.+/"
+              },
+              "content": {
+                "type": "NoEmptyAny"
+              }
+            }
+          }
+        },
+        "required-attr": false
+      }
+    }
+  ]
 }
