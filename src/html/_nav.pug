@@ -1,10 +1,10 @@
 nav.Nav
   ul.__list
     li
-      a(href=`${_html}index.pug`) index
+      a(href=`${_resolver(_depth, true)}index.pug`) index
     li
-      a(href=`${_html}about.pug`) abount
+      a(href=`${_resolver(_depth, true)}about.pug`) abount
     li
-      a(href=`${_html}blog/index.pug`) blog
+      a(href=`${_resolver(_depth, true)}blog/index.pug`) blog
     li
-      a(href=`${_html}blog/tag1/index.pug`) blog - Tag1
+      a(href=`${_resolver(_depth, true)}blog/tag1/index.pug`) blog - Tag1
