@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/html/index.pug --no-optimize --no-source-maps --public-url ./",
-    "lint:html": "markuplint dist/**/*.html --ruleset ./markuplintrc",
+    "lint:html": "markuplint dist/**/*.html",
     "lint:css": "stylelint dist/**/*.css",
     "start": "parcel src/html/index.pug --open --no-cache",
     "test": "npm run lint:css && npm run lint:html",
