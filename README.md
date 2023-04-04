@@ -14,7 +14,7 @@ Parcel がポリフィル指定をよしなにしてくれているので .babel
 
 ## development
 
-Node.js v16.16.0 が必要です。
+Node.js v18.15.0 が必要です。
 
 ```bash
 npm ci
@@ -44,12 +44,4 @@ npm run test
 
 ## format
 
-基本的に触ったファイルなら pre-commit 時に整形されます。
-
-**全てのファイルを強制的に整形する場合**は下記のコマンドを実行してください。
-
-```bash
-npm run prettier
-```
-
-整形ルールの設定ファイルはありません。Prettier のデフォルトに従います。
+変更して git に stage されたファイルは pre-commit 時に整形されます。
